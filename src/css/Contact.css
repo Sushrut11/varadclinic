@@ -1,0 +1,80 @@
+
+
+/* ── Banner container ─────────────────────────── */
+.contact-banner{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+    background:var(--clr-secondary);
+    color:#fff;
+    padding:2rem 2.5rem;
+    border-radius:32px;
+    gap:2rem;
+  }
+  
+  /* ── Text column ──────────────────────────────── */
+  .contact-text{
+    flex:1 1 300px;
+    max-width:480px;          /* readable line-length */
+    text-align:left;
+  }
+  
+  .contact-text h2{
+    font-family:var(--ff-heading);
+    font-weight:600;
+    font-size:clamp(1.5rem,4vw,2rem);
+    margin:0 0 .75rem;
+  }
+  
+  .contact-text p{
+    font-family:var(--ff-body);
+    margin:0 0 1.25rem;       /* breathing room before CTAs */
+    line-height:1.6;
+  }
+  
+  /* ── CTA column ───────────────────────────────── */
+  .cta-wrapper{
+    flex:1 1 220px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1.25rem;
+  }
+  
+  /* shared button style */
+  .cta-btn{
+    display:inline-block;
+    min-width:230px;          /* equal widths */
+    padding:.85rem 2rem;
+    border-radius:50px;
+    font:500 1rem/1 var(--ff-body);
+    text-align:center;
+    text-decoration:none;
+    transition:box-shadow var(--transition);
+  }
+  
+  /* Call button */
+  .call-btn{
+    background:#f9f9f9;
+    color:#000;
+    border:none;
+  }
+  
+  /* WhatsApp button */
+  .wa-btn{
+    background:#7DCE84;       /* softer green */
+    color:#fff;
+    border:none;
+  }
+  
+  .cta-btn:hover,
+  .cta-btn:focus{
+    box-shadow:0 0 12px rgba(255,255,255,.20),
+               0 4px 18px rgba(0,0,0,.15);
+  }
+  
+/* hide the desktop banner below 769 px */
+@media (max-width:768px){
+    .contact-banner{ display:none; }
+  }

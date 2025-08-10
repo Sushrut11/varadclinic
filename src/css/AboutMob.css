@@ -1,0 +1,128 @@
+@media (min-width: 769px) {
+    .aboutmob-section { display: none; }
+  }
+  
+  .aboutmob-section {
+    background: var(--clr-primary, #f7f7fa);
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+  }
+  
+  .aboutmob-heading {
+    text-align: center;
+    margin-bottom: 1.3rem;
+  }
+  .aboutmob-heading h2 {
+    font-family: var(--ff-heading, Montserrat);
+    font-size: 1.6rem;
+    color: #222;
+    font-weight: 600;
+    margin: 0;
+  }
+  .aboutmob-heading p {
+    font-family: var(--ff-body, Poppins);
+    font-size: 0.93rem;
+    margin: 0.55rem 1rem 0 1rem;
+    color: #444;
+    opacity: 0.84;
+  }
+  
+  /* --- Card layout --- */
+  .aboutmob-card {
+    position: relative;
+    background: #fff;
+    border: 2px solid var(--clr-secondary, #c277fc);
+    border-radius: 18px;
+    margin: 2rem auto 1.35rem auto;
+    padding: 0.2rem 1rem 1rem 1rem;
+    min-height: 140px;
+    max-width: 94vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Photo box placement and sizing */
+  .aboutmob-photo {
+    position: absolute;
+    top: -28px;
+    left: 18px; /* NEW: small margin from the left edge */
+    width: 110px;
+    height: 120px;
+    border: 2px solid var(--clr-secondary, #c277fc);
+    border-radius: 13px;
+    background: #fff;
+    box-shadow: 0 2px 13px rgba(194,119,252,0.11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 3;
+  }
+  .aboutmob-photo img {
+    object-fit: cover;
+    width: 110px;
+    height: 120px;
+    border-radius: 9px;
+  }
+  
+  /* Header text wraps next to image, vertically stacked and left-aligned */
+  .aboutmob-header-text {
+    margin-left: 132px; /* 110px photo + 18px left + 4px border */
+    margin-top: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.19em;
+  }
+  .aboutmob-name {
+    font-family: var(--ff-heading, Montserrat);
+    font-size: 1.11rem;
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 0.13em;
+  }
+  .aboutmob-degree {
+    font-family: var(--ff-heading, Montserrat);
+    color: var(--clr-secondary, #c277fc);
+    font-size: 0.97rem;
+    font-weight: 500;
+    margin-bottom: 0.12em;
+  }
+  .aboutmob-designation {
+    font-family: var(--ff-heading, Montserrat);
+    color: #15151c;
+    font-size: 0.90rem;
+    font-weight: 500;
+    opacity: 0.96;
+  }
+  
+  /* Description full width under header, justified left but with left margin for clean look */
+  .aboutmob-description {
+    margin-left: 0;
+    margin-top: 0.57rem;
+    font-family: var(--ff-body, Poppins);
+    font-size: 0.91rem;
+    color: #222;
+    opacity: 0.89;
+    text-align: justify;
+    line-height: 1.5;
+    padding-right: 0.1rem;
+  }
+  
+  /* FOR SMALLEST SCREENS
+  @media (max-width: 400px) {
+    .aboutmob-photo {
+      width: 76px;
+      height: 76px;
+      left: 10px;
+    }
+    .aboutmob-photo img {
+      width: 59px;
+      height: 59px;
+    }
+    .aboutmob-header-text {
+      margin-left: 90px;
+    }
+  } */
+  

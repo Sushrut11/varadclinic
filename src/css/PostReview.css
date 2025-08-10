@@ -1,0 +1,77 @@
+.post-review-section {
+  background: var(--clr-secondary);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Removed flex: 1 since it's no longer a flex item alongside testimonial */
+}
+
+.review-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.review-content h3 {
+  font-family: var(--ff-heading);
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 0 0 0.5rem 0;
+}
+
+.review-content p {
+  font-family: var(--ff-body);
+  color: #fff;
+  opacity: 0.9;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.review-btn {
+  background: #fff;
+  color: var(--clr-secondary);
+  border: none;
+  border-radius: 8px;
+  padding: 0.85rem 1.5rem;
+  font-family: var(--ff-body);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.review-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Mobile: Stack vertically in the strip */
+@media (max-width: 768px) {
+  .post-review-section {
+    padding: 1.5rem;
+  }
+
+  .review-strip {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .review-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .review-content p {
+    font-size: 0.9rem;
+  }
+
+  .review-btn {
+    padding: 0.8rem 1.8rem;
+  }
+}

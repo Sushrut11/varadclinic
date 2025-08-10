@@ -1,0 +1,153 @@
+.testimonial-section-vertical {
+  background: var(--clr-primary);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.testimonial-header {
+  text-align: center;
+  margin-bottom: 1.1rem;
+}
+
+.arrow-controls {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
+.arrow-above {
+  margin-bottom: 0.7rem;
+}
+
+.arrow-below {
+  margin-top: 0.7rem;
+}
+
+.arrow-btn {
+  background: none;
+  border: none;
+  padding: 0.22rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.arrow-svg {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) saturate(100%) invert(45%) sepia(73%) saturate(4733%) hue-rotate(269deg) brightness(93%) contrast(94%);
+  transition: transform 0.14s;
+}
+
+.rotate-up { transform: rotate(0deg); }
+.rotate-down { transform: rotate(180deg); }
+
+.testimonial-card-vertical {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2.5rem 3rem; /* Increased padding for better proportion */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  max-width: 850px; /* Significantly increased from 600px */
+  min-width: 400px; /* Increased from 300px */
+  width: 90%; /* Use percentage for better responsiveness */
+  margin: 0 auto;
+  transition: transform 0.38s cubic-bezier(.42,0,.12,1), opacity 0.32s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonial-card-vertical.animating {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.stars {
+  margin-bottom: 1.2rem; /* Increased spacing */
+  text-align: left;
+}
+
+.star {
+  color: #ddd;
+  font-size: 1.3rem; /* Slightly larger stars */
+  margin-right: 0.15rem; /* More spacing between stars */
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.review-text {
+  font-family: var(--ff-body);
+  font-size: 1.1rem; /* Slightly larger text */
+  line-height: 1.7; /* More line height for better readability */
+  color: var(--clr-text);
+  margin: 0 0 1.5rem;
+  font-style: italic;
+  text-align: left; /* Center the review text for better balance */
+}
+
+.reviewer-info {
+  text-align: left; /* Center the reviewer name */
+}
+
+.reviewer-info h4 {
+  font-family: var(--ff-heading);
+  color: var(--clr-text);
+  margin: 0;
+  font-size: 1.2rem; /* Larger name */
+  font-weight: 600;
+}
+
+/* Large desktop screens - even wider */
+@media (min-width: 1200px) {
+  .testimonial-card-vertical {
+    max-width: 1000px; /* Extra wide on large screens */
+    padding: 3rem 4rem;
+  }
+  
+  .review-text {
+    font-size: 1.2rem;
+  }
+  
+  .reviewer-info h4 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-section-vertical {
+    padding: 2rem 1rem;
+  }
+  
+  .testimonial-card-vertical {
+    padding: 1.5rem 1.2rem; /* More padding on mobile too */
+    max-width: 100%;
+    min-width: 280px;
+    
+  }
+  
+  .review-text {
+    font-size: 1rem;
+    text-align: left; /* Left align on mobile for readability */
+  }
+  
+  .reviewer-info {
+    text-align: left;
+  }
+  
+  .reviewer-info h4 {
+    font-size: 1.1rem;
+  }
+  
+  .arrow-svg {
+    width: 15px;             
+    height: 15px;
+  }
+}

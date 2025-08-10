@@ -1,0 +1,51 @@
+/* ─── Google Fonts ──────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+/* ─── CSS variables ─────────────────────────────────────────────── */
+:root{
+  /* colours */
+  --clr-primary: #f2f2f2;
+  --clr-secondary:#c277fc;
+  --clr-text:#171717;
+
+  /* typefaces */
+  --ff-heading:'Montserrat', sans-serif;
+  --ff-body:'Poppins', sans-serif;
+
+  --transition:250ms ease;
+}
+
+/* ─── Global reset ──────────────────────────────────────────────── */
+html,body{
+  margin:0;
+  padding:0;
+  font-family:var(--ff-body);       /* default = Poppins */
+  color:var(--clr-text);
+  background:var(--clr-primary);
+  scroll-behavior:smooth;           /* native smooth scrolling */
+}
+
+section{
+  padding:2rem 1rem 0.5rem;
+  max-width:1200px;
+  margin-inline:auto;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+  transition:var(--transition);
+}
+
+/* ─── Typography helpers ───────────────────────────────────────── */
+h1,h2,h3,h4,h5,h6{
+  font-family:var(--ff-heading);    /* Montserrat */
+  font-weight:600;
+  line-height:1.2;
+  margin:0;
+}
+
+p,li,span,button,input,textarea{
+  line-height:1.6;
+  font-weight:400;
+}

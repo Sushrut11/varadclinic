@@ -1,0 +1,147 @@
+.about-doctors-section {
+  background: var(--clr-primary, #f7f7fa);
+  padding: 0.5rem 0 2rem;
+}
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 2.7rem;
+}
+
+.about-heading h2 {
+  font-family: var(--ff-heading, Montserrat);
+  font-size: clamp(2.3rem, 5vw, 3rem);
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+.about-heading p {
+  font-family: var(--ff-body, Poppins);
+  font-size: 1.2rem;
+  color: #444;
+  margin: 1rem 0 0 0;
+  opacity: 0.85;
+}
+
+.doctor-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  border: 2px solid var(--clr-secondary, #c277fc);
+  border-radius: 28px;
+  margin: 0 auto 2.5rem auto;
+  max-width: 1100px;
+  min-height: 210px;
+  box-sizing: border-box;
+}
+
+.doctor-row .doctor-text {
+  flex: 1 1 0%;
+  padding: 2.5rem 2rem 2.5rem 2.5rem;
+  z-index: 1;
+}
+
+/* --- Photo box shared sizing --- */
+.doctor-row .doctor-img-box {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border: 2px solid var(--clr-secondary, #c277fc);
+  border-radius: 24px;
+  box-shadow: 0 2px 16px rgba(194,119,252,0.11);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 5;
+}
+
+/* FIXED: Apply proper sizing to the actual images inside the boxes */
+.doctor-row .doctor-img-box img {
+  width: 100%;     /* Fill the container width */
+  height: 100%;    /* Fill the container height */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+  border-radius: 16px;
+}
+
+/* REMOVED the tiny 20px dimensions - this was causing the problem */
+/* .dad-img {
+  height: 20px;
+  width: 20px;
+} */
+
+/* --- Overlap positions: Centered on border --- */
+.mom-row .mom-img {
+  /* Center over top right corner */
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.dad-row .dad-img {
+  left: -100px;
+  bottom: +42px;
+}
+
+/* --- Doctor text styles --- */
+.doctor-text h3 {
+  font-family: var(--ff-heading, Montserrat);
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 .6rem;
+  color: #222;
+}
+
+.qualification {
+  font-family: var(--ff-heading, Montserrat);
+  font-size: 1.17rem;
+  font-weight: 500;
+  color: var(--clr-secondary, #c277fc);
+  margin-bottom: .48rem;
+}
+
+.designation {
+  font-family: var(--ff-heading, Montserrat);
+  font-weight: 600;
+  margin-bottom: .9rem;
+  font-size: 1.07rem;
+  color: #15151c;
+}
+
+.doctor-text p {
+  font-family: var(--ff-body, Poppins);
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.6;
+  opacity: .87;
+  margin: 0;
+}
+
+/* --- For the bottom card, keep content clear of photo using margin-left --- */
+.dad-row .doctor-text {
+  margin-left: 110px; /* (half photo box width + some gap) */
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 1150px) {
+  .about-content, .doctor-text, .doctor-row .doctor-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .mom-row .doctor-content,
+  .mom-row .doctor-text {
+    padding-right: 1rem;
+  }
+  .dad-row .doctor-text {
+    margin-left: 60px; /* decrease as needed for small screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-doctors-section {
+    display: none !important;
+  }
+}
