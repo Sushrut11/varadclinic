@@ -19,7 +19,7 @@ export default function About() {
           </p>
         </div>
         <div className="doctor-img-box mom-img">
-          {/* Use alt and correct src for actual images */}
+
           <img src="/images/M.jpg" alt="Dr. Manisha Ursal" />
         </div>
       </div>

@@ -15,7 +15,7 @@ export default function Footer() {
 
         </div>
 
-        {/* Quick Links - MOVED TO FIRST */}
+
         <div className="footer-col">
           <h4>Quick&nbsp;Links</h4>
           <ul className="quick-links">
@@ -26,14 +26,14 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Call Us - SECOND */}
+
         <div className="footer-col">
           <h4>Call&nbsp;Us</h4>
           <a href="tel:+919763361236">+91&nbsp;9763&nbsp;361&nbsp;236</a>
           <a href="tel:+919881837313">+91&nbsp;9881&nbsp;837&nbsp;313</a>
         </div>
 
-        {/* Reach Us - THIRD */}
+
         <div className="footer-col">
           <h4>Reach&nbsp;Us</h4>
           <p>
@@ -44,7 +44,7 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Open Hours - FOURTH (LAST) */}
+
         <div className="footer-col">
           <h4>Open&nbsp;Hours</h4>
           <ul className="hours-list">

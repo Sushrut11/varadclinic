@@ -76,7 +76,7 @@ export default function Hero() {
               role="img"
               aria-label={slide.imageAlt}
             >
-              {/* Overlay text for mobile slides with hasOverlay: true (MOM & DAD) */}
+
               {isMobile && slide.hasOverlay && (
                 <div className="hero-overlay-text">
                   {slide.overlayText}

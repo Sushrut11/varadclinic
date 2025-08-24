@@ -84,9 +84,9 @@ const treatmentsList = [
 
 export default function Treatments() {
   const [expanded, setExpanded] = useState(false);
-  const mobileInitial = 4; // Topics shown before expand on mobile
+  const mobileInitial = 4; 
 
-  // Helper: flatten for 4x4 or 5x4 grid
+
   function chunk(arr, size) {
     const out = [];
     for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
@@ -123,7 +123,7 @@ export default function Treatments() {
         ) : (
           <>
             <div className="treatments-columns">
-              {/* Split the list into two columns for mobile expanded */}
+              {/* Spliting the list into two columns for mobile expanded */}
               {[0, 1].map(col =>
                 <div className="treatments-col" key={col}>
                   {treatmentsList.filter((_, i) => i % 2 === col).map(renderTopic)}

@@ -46,7 +46,7 @@
   .aboutmob-photo {
     position: absolute;
     top: -28px;
-    left: 18px; /* NEW: small margin from the left edge */
+    left: 18px; 
     width: 110px;
     height: 120px;
     border: 2px solid var(--clr-secondary, #c277fc);
@@ -66,9 +66,9 @@
     border-radius: 9px;
   }
   
-  /* Header text wraps next to image, vertically stacked and left-aligned */
+
   .aboutmob-header-text {
-    margin-left: 132px; /* 110px photo + 18px left + 4px border */
+    margin-left: 132px; 
     margin-top: 0.6rem;
     display: flex;
     flex-direction: column;
@@ -97,7 +97,7 @@
     opacity: 0.96;
   }
   
-  /* Description full width under header, justified left but with left margin for clean look */
+
   .aboutmob-description {
     margin-left: 0;
     margin-top: 0.57rem;
@@ -110,19 +110,4 @@
     padding-right: 0.1rem;
   }
   
-  /* FOR SMALLEST SCREENS
-  @media (max-width: 400px) {
-    .aboutmob-photo {
-      width: 76px;
-      height: 76px;
-      left: 10px;
-    }
-    .aboutmob-photo img {
-      width: 59px;
-      height: 59px;
-    }
-    .aboutmob-header-text {
-      margin-left: 90px;
-    }
-  } */
-  
+ 

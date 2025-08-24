@@ -6,7 +6,7 @@
 
 .reviews-container {
   display: flex;
-  flex-direction: column; /* Changed from row to column */
+  flex-direction: column; 
   box-shadow: 0 8px 32px rgba(0,0,0,0.1);
   border-radius: 16px;
   overflow: hidden;
@@ -19,7 +19,7 @@
   flex-shrink: 0;
 }
 
-/* Mobile: same layout, just tighter spacing */
+
 @media (max-width: 768px) {
   .reviews-section {
     padding: 1.5rem 0.8rem;

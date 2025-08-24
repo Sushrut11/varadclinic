@@ -1,8 +1,4 @@
 
-/* .map-strip {
-    margin-top: 4rem;
-  } */
-  
   .map-header {
     text-align: center;
     margin-bottom: 1.5rem;
@@ -24,7 +20,7 @@
     font-size: 1rem;
   }
   
-  /* Map container with overlay */
+
   .map-container {
     position: relative;
     display: inline-block;
@@ -38,7 +34,7 @@
     border: 0;
   }
   
-  /* Invisible overlay that covers the entire map */
+
   .map-overlay {
     position: absolute;
     top: 0;
@@ -52,10 +48,10 @@
   }
   
   .map-overlay:hover {
-    background: rgba(194, 119, 252, 0.05); /* subtle violet tint on hover */
+    background: rgba(194, 119, 252, 0.05); 
   }
   
-  /* Screen reader only text */
+
   .sr-only {
     position: absolute;
     width: 1px;

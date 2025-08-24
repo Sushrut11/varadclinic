@@ -7,7 +7,6 @@
 }
 
 .treatments-section {
-  /* padding: 1.5rem 0 0; */
   background: transparent;
 }
 
@@ -34,7 +33,7 @@
   box-sizing: border-box;
 }
 
-/* MOBILE: Drawer columns, see more/less */
+
 .treatments-columns {
   display: flex;
   position: relative;
@@ -80,7 +79,7 @@
   margin-left: 0.44em;
 }
 
-/* Topics/titles: bold black only */
+
 .treat-topic-title {
   font-family: var(--ff-heading, Montserrat);
   color: #18181d;
@@ -90,7 +89,7 @@
   letter-spacing: .01em;
 }
 
-/* Only for single-point items: bold black + bullet */
+
 .standalone-bullet {
   font-family: var(--ff-body, Poppins);
   font-size: 1rem;
@@ -112,7 +111,7 @@
   display: inline-block;
 }
 
-/* Bulleted subs list */
+
 .treatment-topic ul {
   padding: 0.01em 0 0.17em 1.1em;
   margin: 0 0 0.38em 0;
@@ -144,7 +143,7 @@
   opacity: 0.89;
 }
 
-/* DESKTOP: Responsive grid – fills columns, no wasted space */
+
 @media (min-width: 769px) {
   .treatments-desktop-card {
     padding: 1.7rem 1.3rem 1.3rem 1.3rem;
@@ -160,7 +159,7 @@
   }
 }
 
-/* General responsiveness */
+
 @media (max-width: 600px) {
   .treatments-card, .treatments-desktop-card { padding: 0.9rem 0.6rem 1rem 0.65rem; }
   .treatments-heading {font-size: 1.6rem;

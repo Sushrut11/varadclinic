@@ -1,8 +1,6 @@
-/* src/components/Footer.css */
 
-/* ----- colours & layout ----- */
 .site-footer{
-  background: var(--clr-secondary);   /* violet */
+  background: var(--clr-secondary);   
   color: #fff;
 }
 
@@ -13,13 +11,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start; /* Align columns to top */
-  gap: 1.5rem; /* Reduced gap for better spacing */
+  align-items: flex-start; 
+  gap: 1.5rem; 
 }
 
-/* ----- brand block ----- */
+
 .brand{
-  flex: 1 1 100%; /* Full width on top */
+  flex: 1 1 100%; 
   text-align: center;
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
@@ -39,25 +37,25 @@
   margin: 0;
 }
 
-/* ----- logo styling ----- */
+
 .footer-logo {
   height: 45px;
   width: auto;
   max-height: 50px;
   object-fit: contain;
-  filter: brightness(0) invert(1); /* Makes the logo white */
+  filter: brightness(0) invert(1); 
   margin-bottom: 0.5rem;
 }
 
-/* ----- columns with better proportions ----- */
+
 .footer-col{
   font-size: .95rem;
-  min-height: 120px; /* Ensure consistent height */
+  min-height: 120px; 
   display: flex;
   flex-direction: column;
 }
 
-/* Specific flex-basis for better balance */
+
 .footer-col:nth-of-type(2) { /* Quick Links */
   flex: 0 1 180px;
 }
@@ -77,7 +75,7 @@
 .footer-col h4{
   font-family: var(--ff-heading);
   font-size: 1.1rem;
-  margin: 0 0 1rem; /* Increased margin for breathing room */
+  margin: 0 0 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid rgba(255,255,255,0.2);
 }
@@ -86,7 +84,7 @@
   color: #fff;
   text-decoration: none;
   display: block;
-  margin-bottom: .5rem; /* Increased spacing */
+  margin-bottom: .5rem; 
   padding: 0.2rem 0;
   transition: opacity 0.2s ease;
 }
@@ -96,7 +94,7 @@
   opacity: 0.8;
 }
 
-/* ----- quick links styling ----- */
+
 .quick-links{
   list-style: none;
   margin: 0; 
@@ -104,20 +102,20 @@
 }
 
 .quick-links li{ 
-  margin-bottom: .5rem; /* Increased spacing */
+  margin-bottom: .5rem; 
 }
 
-/* ----- hours list styling ----- */
+
 .hours-list {
   list-style: none;
   margin: 0;
   padding: 0;
   font-size: 0.9rem;
-  line-height: 1.5; /* Increased line height */
+  line-height: 1.5; 
 }
 
 .hours-list li {
-  margin-bottom: 0.4rem; /* Increased spacing */
+  margin-bottom: 0.4rem; 
   color: #fff;
 }
 
@@ -126,7 +124,7 @@
   color: #fff;
 }
 
-/* Indent sub-bullets */
+
 .hours-list li:nth-child(2),
 .hours-list li:nth-child(3) {
   margin-left: 1rem;
@@ -134,21 +132,21 @@
   opacity: 0.9;
 }
 
-/* ----- call us column spacing ----- */
+
 .footer-col:nth-of-type(3) a {
   padding: 0.3rem 0;
   font-size: 0.95rem;
   margin-bottom: 0.6rem;
 }
 
-/* ----- reach us paragraph spacing ----- */
+
 .footer-col:nth-of-type(4) p {
   margin: 0;
   line-height: 1.6;
   font-size: 0.9rem;
 }
 
-/* ----- bottom strip ----- */
+
 .footer-bottom{
   background: rgba(0,0,0,.08);
   text-align: center;
@@ -162,11 +160,11 @@
     gap: 2rem;
   }
   
-  .footer-col:nth-of-type(2) { /* Quick Links - more space */
+  .footer-col:nth-of-type(2) { 
     flex: 0 1 200px;
   }
   
-  .footer-col:nth-of-type(3) { /* Call Us - more space */
+  .footer-col:nth-of-type(3) { 
     flex: 0 1 220px;
   }
 }
@@ -194,7 +192,7 @@
   }
   
   .brand {
-    grid-column: 1 / -1; /* span full width */
+    grid-column: 1 / -1;
     text-align: center;
     margin-bottom: 1rem;
     padding-bottom: 1rem;

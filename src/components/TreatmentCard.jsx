@@ -10,7 +10,7 @@ export default function TreatmentCard({ name, desc }) {
   );
 }
 
-/* Prop-type safety so you catch typos in dev */
+
 TreatmentCard.propTypes = {
   name: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,

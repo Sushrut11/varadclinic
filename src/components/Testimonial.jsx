@@ -1,7 +1,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import '../css/Testimonial.css';
-import arrowSvg from '../assets/arrow.svg'; // Update path as needed
+import arrowSvg from '../assets/arrow.svg'; 
 
 const mockReviews = [
   {

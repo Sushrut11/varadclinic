@@ -1,28 +1,28 @@
-/* 0.  HIDE BY DEFAULT  ───────────────────────── */
+
 .contact-mob{display:none;}
 
-/* 1.  SHOW + STYLE ON SMALL SCREENS ------------- */
+
 @media (max-width:768px){
   .contact-mob{
     display:flex;
     flex-direction:column;
     background:var(--clr-secondary);
     color:#fff;
-    padding:1rem 0.9rem 0.75rem;    /* added bottom padding for consistency */
+    padding:1rem 0.9rem 0.75rem;    
     text-align:center;
-    gap:0.5rem;                       /* tighter gap between elements */
+    gap:0.5rem;                    
     margin-bottom: 0.5rem;
   }
 
   .contact-mob h2{
-    font:600 1.3rem/1.25 var(--ff-heading);    /* smaller heading: 1.35rem → 1.2rem */
+    font:600 1.3rem/1.25 var(--ff-heading);    
     margin:0;
   }
   
   .contact-mob p{
-    font:400 0.8rem/1.5 var(--ff-body);        /* smaller text: 1rem → 0.9rem */
+    font:400 0.8rem/1.5 var(--ff-body);        
     text-align:justify;
-    margin:0 0 0.3rem;                          /* reduced margin */
+    margin:0 0 0.3rem;                          
     font-size: 0.91rem;
   }
 
@@ -45,7 +45,7 @@
   .wa-btn{
     background:#7DCE84;
     color:#fff;
-    margin-top:0.5rem;                          /* space between buttons */
-    margin-bottom:0.1rem;                       /* small bottom margin for visual balance */
+    margin-top:0.5rem;                          
+    margin-bottom:0.1rem;                       
   }
 }

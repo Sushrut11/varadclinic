@@ -3,7 +3,7 @@
   --clr-secondary: #c277fc;
 }
 
-/* Container */
+
 .nav {
   position: sticky;
   top: 0;
@@ -30,7 +30,7 @@
 }
 
 
-/* Desktop links right-aligned */
+
 .nav__links {
   display: flex;
   align-items: center;
@@ -90,7 +90,6 @@
   .nav { padding: 0 1rem; }
   .nav__links { display: none; }
   .nav__burger { display: flex; }
-  /* For mobile, you might want slightly smaller */
   .nav__logo-img {
     height: 45px;
     
@@ -104,7 +103,6 @@
     box-shadow: 0 8px 28px rgba(173,118,245,0.14);
     min-width: 182px;
     padding: 1rem 0;
-    /* Slide-in animation */
     animation: slideInMenu .25s cubic-bezier(.3,1.2,.49,1) both;
     z-index: 1200;
   }

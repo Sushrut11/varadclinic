@@ -52,11 +52,11 @@
 .testimonial-card-vertical {
   background: #fff;
   border-radius: 12px;
-  padding: 2.5rem 3rem; /* Increased padding for better proportion */
+  padding: 2.5rem 3rem; 
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-  max-width: 850px; /* Significantly increased from 600px */
-  min-width: 400px; /* Increased from 300px */
-  width: 90%; /* Use percentage for better responsiveness */
+  max-width: 850px; 
+  min-width: 400px; 
+  width: 90%; 
   margin: 0 auto;
   transition: transform 0.38s cubic-bezier(.42,0,.12,1), opacity 0.32s;
   opacity: 1;
@@ -69,14 +69,14 @@
 }
 
 .stars {
-  margin-bottom: 1.2rem; /* Increased spacing */
+  margin-bottom: 1.2rem; 
   text-align: left;
 }
 
 .star {
   color: #ddd;
-  font-size: 1.3rem; /* Slightly larger stars */
-  margin-right: 0.15rem; /* More spacing between stars */
+  font-size: 1.3rem; 
+  margin-right: 0.15rem; 
 }
 
 .star.filled {
@@ -85,30 +85,30 @@
 
 .review-text {
   font-family: var(--ff-body);
-  font-size: 1.1rem; /* Slightly larger text */
-  line-height: 1.7; /* More line height for better readability */
+  font-size: 1.1rem; 
+  line-height: 1.7; 
   color: var(--clr-text);
   margin: 0 0 1.5rem;
   font-style: italic;
-  text-align: left; /* Center the review text for better balance */
+  text-align: left; 
 }
 
 .reviewer-info {
-  text-align: left; /* Center the reviewer name */
+  text-align: left; 
 }
 
 .reviewer-info h4 {
   font-family: var(--ff-heading);
   color: var(--clr-text);
   margin: 0;
-  font-size: 1.2rem; /* Larger name */
+  font-size: 1.2rem; 
   font-weight: 600;
 }
 
-/* Large desktop screens - even wider */
+
 @media (min-width: 1200px) {
   .testimonial-card-vertical {
-    max-width: 1000px; /* Extra wide on large screens */
+    max-width: 1000px; 
     padding: 3rem 4rem;
   }
   
@@ -127,7 +127,7 @@
   }
   
   .testimonial-card-vertical {
-    padding: 1.5rem 1.2rem; /* More padding on mobile too */
+    padding: 1.5rem 1.2rem; 
     max-width: 100%;
     min-width: 280px;
     
@@ -135,7 +135,7 @@
   
   .review-text {
     font-size: 1rem;
-    text-align: left; /* Left align on mobile for readability */
+    text-align: left; 
   }
   
   .reviewer-info {

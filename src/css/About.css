@@ -59,21 +59,17 @@
   z-index: 5;
 }
 
-/* FIXED: Apply proper sizing to the actual images inside the boxes */
+
 .doctor-row .doctor-img-box img {
-  width: 100%;     /* Fill the container width */
-  height: 100%;    /* Fill the container height */
-  object-fit: cover; /* Maintain aspect ratio while covering the container */
+  width: 100%;    
+  height: 100%;   
+  object-fit: cover; 
   border-radius: 16px;
 }
 
-/* REMOVED the tiny 20px dimensions - this was causing the problem */
-/* .dad-img {
-  height: 20px;
-  width: 20px;
-} */
 
-/* --- Overlap positions: Centered on border --- */
+
+
 .mom-row .mom-img {
   /* Center over top right corner */
   top: 50%;
@@ -120,9 +116,9 @@
   margin: 0;
 }
 
-/* --- For the bottom card, keep content clear of photo using margin-left --- */
+
 .dad-row .doctor-text {
-  margin-left: 110px; /* (half photo box width + some gap) */
+  margin-left: 110px; 
 }
 
 /* --- Responsive adjustments --- */
@@ -136,7 +132,7 @@
     padding-right: 1rem;
   }
   .dad-row .doctor-text {
-    margin-left: 60px; /* decrease as needed for small screens */
+    margin-left: 60px;
   }
 }
 

@@ -5,7 +5,7 @@
   position: relative;
   background: var(--clr-nav-bg, #ebe7ff);
   z-index: 1;
-  /* overflow: hidden; */
+
 }
 
 .hero-swiper {
@@ -15,17 +15,17 @@
   padding: 0;
 }
 
-/* Desktop: Perfect fit for 1440×600 images - NO SPACING */
+
 @media (min-width: 769px) {
   .hero-swiper {
-    width: 100vw; /* Full viewport width */
+    width: 100vw; 
     height: calc(100vw / 2.4); /* Calculate height based on aspect ratio */
     max-height: 600px; /* Prevent too tall on very wide screens */
     min-height: 400px; /* Prevent too short on narrow screens */
   }
 }
 
-/* Mobile: Perfect fit for 750×1100 images - NO SPACING */
+
 @media (max-width: 768px) {
   .hero-swiper {
     width: 100%;
@@ -42,14 +42,14 @@
   display: block;
 }
 
-/* Desktop & Mobile: Perfect fit with no spacing */
+
 .hero-slide-content {
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
 }
 
-/* Overlay text for mobile (top-right, only for MOM & DAD slides) */
+
 .hero-overlay-text {
   position: absolute;
   top: 15%;
@@ -82,7 +82,7 @@
   }
 }
 
-/* Bottom text for all slides */
+
 .hero-text-fade {
   position: absolute;
   left: 50%;

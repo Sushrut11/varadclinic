@@ -6,7 +6,7 @@ const PHONE = '+919763361236';
 export default function Contact() {
   return (
     <section id="contact" className="contact-banner">
-      {/* LEFT - text */}
+
       <div className="contact-text">
         <h2>Call us today to book an appointment.</h2>
         <p>
@@ -15,7 +15,7 @@ export default function Contact() {
         </p>
       </div>
 
-      {/* RIGHT - stacked CTAs */}
+
       <div className="cta-wrapper">
         <a
           href={`tel:${PHONE}`}
