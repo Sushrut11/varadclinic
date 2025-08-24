@@ -53,21 +53,30 @@ src/
  ├── index.css
  └── main.jsx            # Entry point
 
+```
+
 ## 🚀 Getting Started  
 
+
 1. Clone the repository  
+```bash
    git clone https://github.com/Sushrut11/varadclinic.git  
    cd varadclinic  
+```
 
 2. Install dependencies  
+```bash
    npm install  
-
+```
 3. Run locally  
+```bash
    npm run dev  
    (then open http://localhost:5173/ in your browser)  
-
+```
 4. Build for production  
+```bash
    npm run build  
+```
 
 ## 📜 License  
 This project is intended for personal and educational use.  
